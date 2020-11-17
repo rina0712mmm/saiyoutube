@@ -1,24 +1,26 @@
-# README
+# テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# users テーブル
 
-Things you may want to cover:
+| Column          | Type   | Options     |
+| --------------- | ------ | ----------- |
+| company_name    | string | null: false |
+| email           | string | null: false |
+| password        | string | null: false |
+| first_name      | string | null: false |
+| last_name       | string | null: false |
+| first_name_kana | string | null: false |
+| first_name_kana | string | null: false |
 
-* Ruby version
+### Association
+- has_many :videos
 
-* System dependencies
+# videos テーブル
+| Column          | Type   | Options     |
+| --------------- | ------ | ----------- |
+|  video          | string | null: false |
+|  title          | string | null: false |
+|  detail         | text   | null: false |
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Association
+- belongs_to :user
