@@ -1,2 +1,41 @@
-<h1>Videos#index</h1>
-<p>Find me in app/views/videos/index.html.erb</p>
+<%= render "shared/header" %>
+<div class='main'>
+
+ <%# 画面上部の帯部分 %>
+<div class='title-contents'>
+  <h2 class='service-title'>
+      採用 × Youtube を掛け合わせた
+    </h2>
+    <h2 class='service-explain'>
+      人生を変える情報の宝庫
+    </h2>
+    <p class='service-explain'>
+      新しい一歩を踏み出そう
+    </p>
+  </div>
+
+  <%# /画面上部の帯部分  %>
+
+<%# 動画一覧 %>
+  <div class='video-contents'>
+    <h1 class='title'>動画一覧</h1>
+    <%= link_to '新規投稿', "#", class: "subtitle" %>
+    <ul class='video-lists'>
+
+      <li class='list'>
+        <%= link_to "#" do %>
+        <div class='video-img-content'>
+          <%= image_tag "pic4.jpg", class: "video-img" %>
+        </div>
+        <div class='video-info'>
+          <h3 class='video-title'>
+            <%= "タイトル" %>
+          </h3>
+          <div class='company-name'>
+            <span><%= "企業名" %></span>
+          </div>
+        </div>
+        <% end %>
+      </li>
+      <%= render "shared/footer" %>
+   
