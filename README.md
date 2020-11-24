@@ -70,7 +70,7 @@
     STEP1の求職者が応募をする機能、STEP2の機能
 
 ## データベース設計
-  ![alt text](https://gyazo.com/1b35ce221d83e929234875e9906604e6")
+  ![alt text](https://gyazo.com/1b35ce221d83e929234875e9906604e6)
 
 ## ローカルでの動作方法
 
