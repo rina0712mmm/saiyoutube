@@ -71,7 +71,7 @@
     STEP1の求職者が応募をする機能、STEP2の機能
 
 ## データベース設計
-    ![alt text](https://gyazo.com/1b35ce221d83e929234875e9906604e6)
+   <img width="591" alt="スクリーンショット 2020-11-26 15 06 50" src="https://user-images.githubusercontent.com/72330664/100314085-39527700-2ff9-11eb-971c-0814386b86a5.png">
 
 ## ローカルでの動作方法
     rails 6.0.0

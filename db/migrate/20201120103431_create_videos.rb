@@ -3,7 +3,7 @@ class CreateVideos < ActiveRecord::Migration[6.0]
     create_table :videos do |t|
       t.string :title
       t.text :detail
-
+      t.references  :user, foreign_key: true
       t.timestamps
     end
   end

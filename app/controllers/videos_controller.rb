@@ -1,6 +1,6 @@
 class VideosController < ApplicationController
   def index
-    @video = Video.new
+    @video = Video.all
   end
 
   def create
@@ -11,6 +11,7 @@ class VideosController < ApplicationController
 
   def show
     @video = Video.find(params[:id])
+    @user = @video.user
   end
 
   private
@@ -18,4 +19,10 @@ class VideosController < ApplicationController
   def video_params
     params.require(:video).permit(:title, :detail, :video).merge(user_id: current_user.id)
   end
+
+  def user_params
+    params.require(:user).permit(:company_name, :email, :password, :first_name, :last_name, :phone_number)
+  end
+
 end
+
